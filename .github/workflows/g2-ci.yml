@@ -1,0 +1,19 @@
+name: g2-ci
+
+on:
+  pull_request:
+
+jobs:
+  g2-gate:
+    name: g2-gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: gate
+        run: |
+          if [ -f g2-fail.flag ]; then
+            echo "G2 intentional FAIL"
+            exit 1
+          fi
+          echo "G2 PASS"
