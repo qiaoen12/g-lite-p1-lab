@@ -1,2 +1,3 @@
 ordinary path
 g4 ordinary change
+g4 mixed with infra
