@@ -10,10 +10,5 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: gate
-        run: |
-          if [ -f g2-fail.flag ]; then
-            echo "G2 intentional FAIL"
-            exit 1
-          fi
-          echo "G2 PASS"
+      - name: product-test
+        run: python3 -m unittest test_add.py -v
