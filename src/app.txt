@@ -1,2 +1,5 @@
 ordinary path
 g4 ordinary change
+g5 state E
+g5 state F — reviewable content changed
+g5 state G — another reviewable change after re-approval
