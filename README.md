@@ -6,3 +6,5 @@ G-lite P1 教学实验仓。用来走 GitHub 交付链：Branch → PR → Revie
 
 Developer actor: `qiaoen12`
 Reviewer actor: 待加入（S0）
+
+D1 fixture: missing review. Do not merge.
